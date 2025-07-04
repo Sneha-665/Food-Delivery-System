@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4cf2a1d583ea2a10410a73d6feaad336" label="Order" max_length="40" name="x_946454_food_de_0_order" type="collection">
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Delivery Instruction" max_length="255" name="delivery_instruction" type="string"/>
+        <element label="Postal Code" mandatory="true" max_length="40" name="postal_code" type="integer"/>
+        <element label="State" max_length="255" name="state" type="string"/>
+        <element label="Total Number of Item" mandatory="true" max_length="40" name="total_number_of_item" type="integer"/>
+        <element label="Contact Number" mandatory="true" max_length="255" name="contact_number" type="phone_number_e164"/>
+        <element label="Address" mandatory="true" max_length="255" name="address" type="string"/>
+        <element label="City" mandatory="true" max_length="255" name="city" type="string"/>
+        <element label="Recipient Name" mandatory="true" max_length="255" name="recipient_name" type="string"/>
+        <element label="Price Per Unit" max_length="40" name="price_per_unit" type="integer"/>
+        <element label="Total Price of Complete Order" max_length="40" name="total_price_of_complete_order" type="integer"/>
+        <element label="Country" max_length="32" name="country" reference="core_country" type="reference"/>
+        <element label="Total Price" max_length="40" name="total_price" type="integer"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Menu Items" max_length="32" name="menu_items" reference="x_946454_food_de_0_menu_items" type="reference"/>
+        <element label="Restaurant Details" max_length="32" name="restaurant_details" reference="x_946454_food_de_0_restaurant_details" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+        <index name="index2">
+            <element name="menu_items"/>
+        </index>
+        <index name="index3">
+            <element name="restaurant_details"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

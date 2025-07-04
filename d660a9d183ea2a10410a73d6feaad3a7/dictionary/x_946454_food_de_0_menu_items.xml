@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8f92699583ea2a10410a73d6feaad3bb" label="Menu Items" max_length="40" name="x_946454_food_de_0_menu_items" type="collection">
+        <element label="Restaurant Name" max_length="32" name="restaurant_name" reference="x_946454_food_de_0_restaurant_details" type="reference"/>
+        <element label="Ingredients" max_length="40" name="ingredients" type="string"/>
+        <element label="Document" max_length="40" name="document" type="user_image"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Rating" max_length="38" name="rating" type="decimal"/>
+        <element label="Price" max_length="40" name="price" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Order Details" max_length="32" name="order_details" reference="x_946454_food_de_0_order" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="order_details"/>
+        </index>
+        <index name="index2">
+            <element name="restaurant_name"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

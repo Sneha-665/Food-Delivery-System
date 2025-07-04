@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7091e15583ea2a10410a73d6feaad33a" label="Restaurant Details" max_length="40" name="x_946454_food_de_0_restaurant_details" type="collection">
+        <element label="Description" max_length="2000" name="description" type="string"/>
+        <element label="Rating" max_length="38" name="rating" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Order" max_length="32" name="order" reference="x_946454_food_de_0_order" type="reference"/>
+        <element label="Address" max_length="2000" name="address" type="string"/>
+        <element label="Name" max_length="255" name="name" type="string"/>
+        <element label="Total Number of Orders" max_length="40" name="total_number_of_orders" type="integer"/>
+        <element label="Reference Link" max_length="1024" name="reference_link" type="url"/>
+        <element label="Menu Item" max_length="32" name="menu_item" reference="x_946454_food_de_0_menu_items" type="reference"/>
+        <index name="index">
+            <element name="menu_item"/>
+        </index>
+        <index name="index2">
+            <element name="order"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
