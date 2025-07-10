@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true,verify_parent_scope=false" db_object_id="61ad06bb78a022104f3459503ff42a99" extends="question" label="Variable" max_length="40" name="item_option_new" type="collection">
+        <element label="Isolate Script" max_length="40" name="x_946454_food_de_0_isolate_script" type="boolean"/>
+    </element>
+</database>

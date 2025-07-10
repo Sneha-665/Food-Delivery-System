@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="order" table="x_946454_food_de_0_restaurant_details">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Order</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>order</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="Reference">reference</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <name>x_946454_food_de_0_restaurant_details</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_946454_food_de_0_order">x_946454_food_de_0_order</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 07:59:01</sys_created_on>
+        <sys_id>90a4e55983ea2a10410a73d6feaad322</sys_id>
+        <sys_name>Order</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_dictionary_x_946454_food_de_0_restaurant_details_order</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 07:59:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>sys_dictionary_x_946454_food_de_0_restaurant_details_order</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="order" table="x_946454_food_de_0_restaurant_details"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Order</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>order</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Reference">reference</internal_type><mandatory>false</mandatory><max_length>32</max_length><name>x_946454_food_de_0_restaurant_details</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="x_946454_food_de_0_order">x_946454_food_de_0_order</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-04 07:59:01</sys_created_on><sys_id>90a4e55983ea2a10410a73d6feaad322</sys_id><sys_name>Order</sys_name><sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package><sys_policy/><sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope><sys_update_name>sys_dictionary_x_946454_food_de_0_restaurant_details_order</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-04 07:59:03</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>-1093436675</payload_hash>
+        <record_name>Restaurant Details.Order</record_name>
+        <reverted_from/>
+        <source>d260a9d183ea2a10410a73d6feaad3ac</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 07:59:03</sys_created_on>
+        <sys_id>38a4e55983ea2a10410a73d6feaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197d47232860000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 07:59:03</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>fca4e559d6ea2a10b38599e751c7b9c3</update_guid>
+        <update_guid_history>fca4e559d6ea2a10b38599e751c7b9c3:-1093436675,28a4e55951ea2a10b2f63e970ba8a662:2040839286</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 05:22:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>5278a200d0f54145be752fbba3771049</sys_id>
+        <sys_metadata>90a4e55983ea2a10410a73d6feaad322</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Order</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent display_value="Restaurant Details">7091e15583ea2a10410a73d6feaad33a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_946454_food_de_0_restaurant_details_order</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_946454_food_de_0_restaurant_details_order">38a4e55983ea2a10410a73d6feaad3c4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 05:22:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_config">
+    <sys_ux_app_config action="DELETE">
+        <active>true</active>
+        <custom_icon/>
+        <default_route_type/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <encode_query_string>false</encode_query_string>
+        <icon/>
+        <landing_path>home</landing_path>
+        <name>Reviewer Workspace</name>
+        <prefetch_limits/>
+        <sys_class_name>sys_ux_app_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 11:26:35</sys_created_on>
+        <sys_id>5fad01df8362e250410a73d6feaad324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reviewer Workspace</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_ux_app_config_5fad01df8362e250410a73d6feaad324</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 11:26:35</sys_updated_on>
+    </sys_ux_app_config>
+    <sys_translated_text action="DELETE" query="documentkey=5fad01df8362e250410a73d6feaad324"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>sys_ux_app_config_5fad01df8362e250410a73d6feaad324</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_config"><sys_ux_app_config action="INSERT_OR_UPDATE"><active>true</active><custom_icon/><default_route_type/><description/><disable_auto_reflow>false</disable_auto_reflow><encode_query_string>false</encode_query_string><icon/><landing_path>home</landing_path><name>Reviewer Workspace</name><prefetch_limits/><sys_class_name>sys_ux_app_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-10 11:26:35</sys_created_on><sys_id>5fad01df8362e250410a73d6feaad324</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Reviewer Workspace</sys_name><sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package><sys_policy/><sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope><sys_update_name>sys_ux_app_config_5fad01df8362e250410a73d6feaad324</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-10 11:26:35</sys_updated_on></sys_ux_app_config><sys_translated_text action="delete_multiple" query="documentkey=5fad01df8362e250410a73d6feaad324"/></record_update>]]></payload>
+        <payload_hash>756279315</payload_hash>
+        <record_name>Reviewer Workspace</record_name>
+        <reverted_from/>
+        <source>2baace9583ae2a10410a73d6feaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 11:26:35</sys_created_on>
+        <sys_id>17ad019383a2e250410a73d6feaad3bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197f4165c110000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 11:26:35</sys_updated_on>
+        <type>UX App Configuration</type>
+        <update_guid>1bad0193caa2e25015d25fca2a5692bc</update_guid>
+        <update_guid_history>1bad0193caa2e25015d25fca2a5692bc:756279315</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 11:47:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_config">sys_ux_app_config</sys_db_object>
+        <sys_id>2d90ce62798d4a6da43fde0ec4a36599</sys_id>
+        <sys_metadata>5fad01df8362e250410a73d6feaad324</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reviewer Workspace</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>sys_ux_app_config_5fad01df8362e250410a73d6feaad324</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_config_5fad01df8362e250410a73d6feaad324">17ad019383a2e250410a73d6feaad3bd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 11:47:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

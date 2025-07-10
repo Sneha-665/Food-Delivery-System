@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 07:51:43</sys_created_on>
+        <sys_id>d1f2e1d583ea2a10410a73d6feaad394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_946454_food_de_0_order.x_946454_food_de_0.admin</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_security_acl display_value="x_946454_food_de_0_order">51f2e1d583ea2a10410a73d6feaad391</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d1f2e1d583ea2a10410a73d6feaad394</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 07:51:43</sys_updated_on>
+        <sys_user_role display_value="x_946454_food_de_0.admin" name="x_946454_food_de_0.admin">ea60a9d183ea2a10410a73d6feaad3b6</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>sys_security_acl_role_d1f2e1d583ea2a10410a73d6feaad394</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-04 07:51:43</sys_created_on><sys_id>d1f2e1d583ea2a10410a73d6feaad394</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_946454_food_de_0_order.x_946454_food_de_0.admin</sys_name><sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package><sys_policy/><sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope><sys_security_acl display_value="x_946454_food_de_0_order">51f2e1d583ea2a10410a73d6feaad391</sys_security_acl><sys_update_name>sys_security_acl_role_d1f2e1d583ea2a10410a73d6feaad394</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-04 07:51:43</sys_updated_on><sys_user_role display_value="x_946454_food_de_0.admin" name="x_946454_food_de_0.admin">ea60a9d183ea2a10410a73d6feaad3b6</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1472622032</payload_hash>
+        <record_name>x_946454_food_de_0_order.x_946454_food_de_0.admin</record_name>
+        <reverted_from/>
+        <source>d260a9d183ea2a10410a73d6feaad3ac</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 07:51:43</sys_created_on>
+        <sys_id>15f2e1d583ea2a10410a73d6feaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197d46b7bd20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 07:51:43</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>19f2e1d581ea2a108e6a6d5631819496</update_guid>
+        <update_guid_history>19f2e1d581ea2a108e6a6d5631819496:1472622032</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_946454_food_de_0_order.x_946454_food_de_0.admin">774a734f83aaa250410a73d6feaad30c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 05:22:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>57e66f7d829648a0bdd2be3b450b0400</sys_id>
+        <sys_metadata>d1f2e1d583ea2a10410a73d6feaad394</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_946454_food_de_0_order.x_946454_food_de_0.admin</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent display_value="">51f2e1d583ea2a10410a73d6feaad391</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_d1f2e1d583ea2a10410a73d6feaad394</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_d1f2e1d583ea2a10410a73d6feaad394">15f2e1d583ea2a10410a73d6feaad397</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 05:22:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

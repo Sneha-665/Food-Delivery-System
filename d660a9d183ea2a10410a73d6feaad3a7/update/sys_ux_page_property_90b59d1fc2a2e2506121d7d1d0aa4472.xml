@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>routeConfigId</name>
+        <page display_value="Food Delivery System">94b59d1fb3a2e2508d08fd948ec86781</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 12:01:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>90b59d1fc2a2e2506121d7d1d0aa4472</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>routeConfigId</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_ux_page_property_90b59d1fc2a2e2506121d7d1d0aa4472</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 12:01:37</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_946454_food_de_0.94b59d1fb3a2e2508d08fd948ec86781.root.routeConfigId</unique_name>
+        <value>76a302f10b131010a8b1c96237673a61</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=90b59d1fc2a2e2506121d7d1d0aa4472"/>
+</record_update>

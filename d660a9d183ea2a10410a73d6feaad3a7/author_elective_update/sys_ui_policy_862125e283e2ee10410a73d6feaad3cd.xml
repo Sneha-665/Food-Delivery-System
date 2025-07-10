@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions table="x_946454_food_de_0_order">review_action=reject^ORreview_action=send_back<item display_value="Reject" endquery="false" field="review_action" goto="false" newquery="false" operator="=" or="false" value="reject"/>
+            <item display_value="Send Back" endquery="false" field="review_action" goto="false" newquery="false" operator="=" or="true" value="send_back"/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {}]]></script_false>
+        <script_true><![CDATA[function onCondition() {}]]></script_true>
+        <set_values/>
+        <short_description>When review action is rejected or send back</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 04:56:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>862125e283e2ee10410a73d6feaad3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>When review action is rejected or send back</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_ui_policy_862125e283e2ee10410a73d6feaad3cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 04:56:15</sys_updated_on>
+        <table>x_946454_food_de_0_order</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>sys_ui_policy_862125e283e2ee10410a73d6feaad3cd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_946454_food_de_0_order"&gt;review_action=reject^ORreview_action=send_back&lt;item display_value="Reject" endquery="false" field="review_action" goto="false" newquery="false" operator="=" or="false" value="reject"/&gt;&lt;item display_value="Send Back" endquery="false" field="review_action" goto="false" newquery="false" operator="=" or="true" value="send_back"/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;When review action is rejected or send back&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 04:56:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;862125e283e2ee10410a73d6feaad3cd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;When review action is rejected or send back&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Food Delivery System" source="x_946454_food_de_0"&gt;d660a9d183ea2a10410a73d6feaad3a7&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Food Delivery System"&gt;d660a9d183ea2a10410a73d6feaad3a7&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_862125e283e2ee10410a73d6feaad3cd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-08 04:56:15&lt;/sys_updated_on&gt;&lt;table&gt;x_946454_food_de_0_order&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>330074474</payload_hash>
+        <record_name>When review action is rejected or send back</record_name>
+        <reverted_from/>
+        <source>2baace9583ae2a10410a73d6feaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 04:56:15</sys_created_on>
+        <sys_id>c62125e283e2ee10410a73d6feaad3d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e86448b50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 04:56:15</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>8a2125e230e2ee1049ffb7045fcc9fd0</update_guid>
+        <update_guid_history>8a2125e230e2ee1049ffb7045fcc9fd0:330074474</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 05:22:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>426c939bf84d44049e34f5bf1f997310</sys_id>
+        <sys_metadata>862125e283e2ee10410a73d6feaad3cd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>When review action is rejected or send back</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent display_value="">4cf2a1d583ea2a10410a73d6feaad336</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_862125e283e2ee10410a73d6feaad3cd</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_862125e283e2ee10410a73d6feaad3cd">c62125e283e2ee10410a73d6feaad3d1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 05:22:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

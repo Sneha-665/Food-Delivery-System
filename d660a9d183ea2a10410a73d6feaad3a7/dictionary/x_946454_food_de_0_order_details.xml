@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="66db03ba83626250410a73d6feaad3d2" extends="task" label="Order Details" max_length="40" name="x_946454_food_de_0_order_details" text_index="true" type="collection">
+        <element label="Recipient Name" mandatory="true" max_length="40" name="recipient_name" type="string"/>
+        <element label="Address" mandatory="true" max_length="255" name="address" type="string"/>
+        <element label="Restaurant Name" max_length="40" name="restaurant" type="string"/>
+        <element choice="1" default="new" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In review" sequence="1" value="in_review"/>
+                <element inactive_on_update="false" label="Approve" sequence="2" value="approve"/>
+                <element inactive_on_update="false" label="Reject" sequence="3" value="reject"/>
+                <element inactive_on_update="false" label="Send Back" sequence="4" value="send_back"/>
+                <element inactive_on_update="false" label="Re submit" sequence="5" value="re_submit"/>
+                <element inactive_on_update="false" label="Cancel" sequence="6" value="cancel"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+            </choice>
+        </element>
+        <element label="Delivery Instructions" max_length="255" name="delivery_instructions" type="string"/>
+        <element label="Menu Items" max_length="32" name="menu_items" reference="x_946454_food_de_0_menu_items" type="reference"/>
+        <element label="Total Price" max_length="40" name="total_price" type="integer"/>
+        <element label="Email" max_length="40" name="email" type="string"/>
+        <element label="State" mandatory="true" max_length="40" name="stat0" type="string"/>
+        <element label="Review Comment" max_length="40" name="review_comment" type="string"/>
+        <element choice="1" label="Review Action" max_length="40" name="review_action" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Reject" sequence="1" value="reject"/>
+                <element inactive_on_update="false" label="Send Back" sequence="2" value="send_back"/>
+                <element inactive_on_update="false" label="Approve" sequence="0" value="approve"/>
+            </choice>
+        </element>
+        <element label="Country" mandatory="true" max_length="40" name="country" type="string"/>
+        <element label="Postal Code" mandatory="true" max_length="40" name="postal_code" type="string"/>
+        <element label="City" mandatory="true" max_length="40" name="city" type="string"/>
+        <element label="Restaurant" max_length="32" name="restauran0" reference="x_946454_food_de_0_restaurant_details" type="reference"/>
+        <element label="State" max_length="40" name="stat1" type="string"/>
+        <element label="Contact Number" mandatory="true" max_length="40" name="contact_number" type="string"/>
+    </element>
+</database>

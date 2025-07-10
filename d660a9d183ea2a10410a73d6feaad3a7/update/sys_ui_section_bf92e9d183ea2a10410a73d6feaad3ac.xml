@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-04 09:55:45</sys_created_on>
-            <sys_id>d65ffd1d836e2a10410a73d6feaad354</sys_id>
+            <sys_created_on>2025-07-07 07:28:25</sys_created_on>
+            <sys_id>116ab49e83aa6e10410a73d6feaad39d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_946454_food_de_0_menu_items" sys_domain="global" view="Default view">bf92e9d183ea2a10410a73d6feaad3ac</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-04 09:55:45</sys_updated_on>
+            <sys_updated_on>2025-07-07 07:28:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,111 +18,83 @@
             <element>name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-04 09:55:45</sys_created_on>
-            <sys_id>de5ffd1d836e2a10410a73d6feaad354</sys_id>
+            <sys_created_on>2025-07-07 07:28:25</sys_created_on>
+            <sys_id>196ab49e83aa6e10410a73d6feaad39d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_946454_food_de_0_menu_items" sys_domain="global" view="Default view">bf92e9d183ea2a10410a73d6feaad3ac</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-04 09:55:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>document</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-04 09:55:45</sys_created_on>
-            <sys_id>d65ffd1d836e2a10410a73d6feaad355</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_946454_food_de_0_menu_items" sys_domain="global" view="Default view">bf92e9d183ea2a10410a73d6feaad3ac</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-04 09:55:45</sys_updated_on>
+            <sys_updated_on>2025-07-07 07:28:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>ingredients</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-04 09:55:45</sys_created_on>
-            <sys_id>de5ffd1d836e2a10410a73d6feaad355</sys_id>
+            <sys_created_on>2025-07-07 07:28:25</sys_created_on>
+            <sys_id>116ab49e83aa6e10410a73d6feaad39e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_946454_food_de_0_menu_items" sys_domain="global" view="Default view">bf92e9d183ea2a10410a73d6feaad3ac</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-04 09:55:45</sys_updated_on>
+            <sys_updated_on>2025-07-07 07:28:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-04 09:55:45</sys_created_on>
-            <sys_id>d65ffd1d836e2a10410a73d6feaad356</sys_id>
+            <sys_created_on>2025-07-07 07:28:25</sys_created_on>
+            <sys_id>196ab49e83aa6e10410a73d6feaad39e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_946454_food_de_0_menu_items" sys_domain="global" view="Default view">bf92e9d183ea2a10410a73d6feaad3ac</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-04 09:55:45</sys_updated_on>
+            <sys_updated_on>2025-07-07 07:28:25</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>price</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-04 09:55:45</sys_created_on>
-            <sys_id>de5ffd1d836e2a10410a73d6feaad356</sys_id>
+            <sys_created_on>2025-07-07 07:28:25</sys_created_on>
+            <sys_id>116ab49e83aa6e10410a73d6feaad39f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_946454_food_de_0_menu_items" sys_domain="global" view="Default view">bf92e9d183ea2a10410a73d6feaad3ac</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-04 09:55:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>rating</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-04 09:55:45</sys_created_on>
-            <sys_id>d65ffd1d836e2a10410a73d6feaad357</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_946454_food_de_0_menu_items" sys_domain="global" view="Default view">bf92e9d183ea2a10410a73d6feaad3ac</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-04 09:55:45</sys_updated_on>
+            <sys_updated_on>2025-07-07 07:28:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>restaurant_name</element>
-            <position>7</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-04 09:55:45</sys_created_on>
-            <sys_id>de5ffd1d836e2a10410a73d6feaad357</sys_id>
+            <sys_created_on>2025-07-07 07:28:25</sys_created_on>
+            <sys_id>196ab49e83aa6e10410a73d6feaad39f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_946454_food_de_0_menu_items" sys_domain="global" view="Default view">bf92e9d183ea2a10410a73d6feaad3ac</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-04 09:55:45</sys_updated_on>
+            <sys_updated_on>2025-07-07 07:28:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>order_details</element>
-            <position>8</position>
+            <element>document</element>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-04 09:55:45</sys_created_on>
-            <sys_id>d65ffd1d836e2a10410a73d6feaad358</sys_id>
+            <sys_created_on>2025-07-07 07:28:25</sys_created_on>
+            <sys_id>116ab49e83aa6e10410a73d6feaad3a0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_946454_food_de_0_menu_items" sys_domain="global" view="Default view">bf92e9d183ea2a10410a73d6feaad3ac</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-04 09:55:45</sys_updated_on>
+            <sys_updated_on>2025-07-07 07:28:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

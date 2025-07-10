@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_946454_food_de_0.getMenuDetails</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>getMenuDetails</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetMenuItemsByRestaurant = Class.create();
+GetMenuItemsByRestaurant.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    
+      getMenuItemsForRestaurant: function(restaurantId) {
+        //var restaurantId = this.getParameter('sysparm_restaurant_id');
+        var menuIds = [];
+
+        if (!restaurantId) return '';
+
+        var gr = new GlideRecord('x_946454_food_de_0_menu_items'); // Replace with your actual table name
+        gr.addQuery('restaurant_name', restaurantId); // Assuming this is a reference field
+        gr.query();
+
+        while (gr.next()) {
+            menuIds.push(gr.getUniqueValue());
+        }
+
+        return 'sys_idIN' + menuIds.join(',');
+	}
+});
+
+    ]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 12:47:07</sys_created_on>
+        <sys_id>b6a28a128362ae10410a73d6feaad363</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>getMenuDetails</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_script_include_b6a28a128362ae10410a73d6feaad363</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 13:49:34</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>sys_script_include_b6a28a128362ae10410a73d6feaad363</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_946454_food_de_0.getMenuDetails&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;getMenuDetails&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GetMenuItemsByRestaurant = Class.create();
+GetMenuItemsByRestaurant.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    
+      getMenuItemsForRestaurant: function(restaurantId) {
+        //var restaurantId = this.getParameter('sysparm_restaurant_id');
+        var menuIds = [];
+
+        if (!restaurantId) return '';
+
+        var gr = new GlideRecord('x_946454_food_de_0_menu_items'); // Replace with your actual table name
+        gr.addQuery('restaurant_name', restaurantId); // Assuming this is a reference field
+        gr.query();
+
+        while (gr.next()) {
+            menuIds.push(gr.getUniqueValue());
+        }
+
+        return 'sys_idIN' + menuIds.join(',');
+	}
+});
+
+    ]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-07 12:47:07&lt;/sys_created_on&gt;&lt;sys_id&gt;b6a28a128362ae10410a73d6feaad363&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;getMenuDetails&lt;/sys_name&gt;&lt;sys_package display_value="Food Delivery System" source="x_946454_food_de_0"&gt;d660a9d183ea2a10410a73d6feaad3a7&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Food Delivery System"&gt;d660a9d183ea2a10410a73d6feaad3a7&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b6a28a128362ae10410a73d6feaad363&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-07 13:49:34&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1539231921</payload_hash>
+        <record_name>getMenuDetails</record_name>
+        <reverted_from/>
+        <source>2baace9583ae2a10410a73d6feaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 13:49:34</sys_created_on>
+        <sys_id>6ca1da5283a2ae10410a73d6feaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e5262f480000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 13:49:34</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>e0a1da5291a2ae1086ae902f2647789f</update_guid>
+        <update_guid_history>e0a1da5291a2ae1086ae902f2647789f:1539231921,ee8ec2de7b62ae1082ea062e97244404:-80174775,501d4e1e4762ae10b2ff30fc1871c3c9:1759483458,bcdccada1b62ae10e7e1ff5be94d54c3:37451127,ba6c0e5ed262ae108b628c5c6507a1a1:1396485856,1f6bc69ad662ae10f6c8ed296cec160c:-77163031,2ec98e1aef62ae10e3adf0a01288f19d:1485972887,f9290a5ada62ae102e85f0575fbb1477:1679725980,b738061aeb62ae10917d606ab843c705:83399068,7d530a520262ae106e0a98aaa8d0e73e:-1994188083</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 13:56:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>90422703915846c080db6fa9652f9000</sys_id>
+        <sys_metadata>b6a28a128362ae10410a73d6feaad363</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getMenuDetails</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>sys_script_include_b6a28a128362ae10410a73d6feaad363</sys_update_name>
+        <sys_update_version display_value="sys_script_include_b6a28a128362ae10410a73d6feaad363">6ca1da5283a2ae10410a73d6feaad39f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 13:56:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

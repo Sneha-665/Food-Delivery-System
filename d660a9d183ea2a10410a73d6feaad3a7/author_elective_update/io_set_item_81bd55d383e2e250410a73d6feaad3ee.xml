@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="Food Delivery System">88860ed183ae2a10410a73d6feaad397</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 12:36:36</sys_created_on>
+        <sys_id>81bd55d383e2e250410a73d6feaad3ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Total prices.Food Delivery System</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>io_set_item_81bd55d383e2e250410a73d6feaad3ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 12:36:36</sys_updated_on>
+        <variable_set display_value="Total prices">1aadddd783e2e250410a73d6feaad39b</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>io_set_item_81bd55d383e2e250410a73d6feaad3ee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="Food Delivery System">88860ed183ae2a10410a73d6feaad397</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-10 12:36:36</sys_created_on><sys_id>81bd55d383e2e250410a73d6feaad3ee</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Total prices.Food Delivery System</sys_name><sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package><sys_policy/><sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope><sys_update_name>io_set_item_81bd55d383e2e250410a73d6feaad3ee</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-10 12:36:36</sys_updated_on><variable_set display_value="Total prices">1aadddd783e2e250410a73d6feaad39b</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>-1665422704</payload_hash>
+        <record_name>Total prices.Food Delivery System</record_name>
+        <reverted_from/>
+        <source>2baace9583ae2a10410a73d6feaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 12:36:36</sys_created_on>
+        <sys_id>05bd151b83e2e250410a73d6feaad313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197f45676730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 12:36:36</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>09bd151b50e2e2503c66c062b5154412</update_guid>
+        <update_guid_history>09bd151b50e2e2503c66c062b5154412:-1665422704</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Total prices.Food Delivery System">c03e551b83e2e250410a73d6feaad305</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 12:38:43</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>3773909af01d4b709b96a4c8f104e100</sys_id>
+        <sys_metadata>81bd55d383e2e250410a73d6feaad3ee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Total prices.Food Delivery System</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>io_set_item_81bd55d383e2e250410a73d6feaad3ee</sys_update_name>
+        <sys_update_version display_value="io_set_item_81bd55d383e2e250410a73d6feaad3ee">05bd151b83e2e250410a73d6feaad313</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 12:38:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Name">a220585683a66e10410a73d6feaad304</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 04:49:25</sys_created_on>
+        <sys_id>23e5d49a83e66e10410a73d6feaad3f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Saravana Bhavan</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>question_choice_23e5d49a83e66e10410a73d6feaad3f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 04:49:25</sys_updated_on>
+        <text>Saravana Bhavan</text>
+        <value>300</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=23e5d49a83e66e10410a73d6feaad3f2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>question_choice_23e5d49a83e66e10410a73d6feaad3f2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>100</order><published_ref/><question display_value="Name">a220585683a66e10410a73d6feaad304</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-07 04:49:25</sys_created_on><sys_id>23e5d49a83e66e10410a73d6feaad3f2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Saravana Bhavan</sys_name><sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package><sys_policy/><sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope><sys_update_name>question_choice_23e5d49a83e66e10410a73d6feaad3f2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-07 04:49:25</sys_updated_on><text>Saravana Bhavan</text><value>300</value></question_choice><fx_price action="delete_multiple" query="id=23e5d49a83e66e10410a73d6feaad3f2"/></record_update>]]></payload>
+        <payload_hash>-851735924</payload_hash>
+        <record_name>Saravana Bhavan</record_name>
+        <reverted_from/>
+        <source>2baace9583ae2a10410a73d6feaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 04:49:25</sys_created_on>
+        <sys_id>140614da83e66e10410a73d6feaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e337ab800000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 04:49:25</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>180614da92e66e10cc9c0a6bd5a42862</update_guid>
+        <update_guid_history>180614da92e66e10cc9c0a6bd5a42862:-851735924</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Saravana Bhavan">ff6d5c56832a6e10410a73d6feaad364</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 05:21:53</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>20ee681a8ff144ae91ac438b6cfa85e4</sys_id>
+        <sys_metadata>23e5d49a83e66e10410a73d6feaad3f2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Saravana Bhavan</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent display_value="">a220585683a66e10410a73d6feaad304</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>question_choice_23e5d49a83e66e10410a73d6feaad3f2</sys_update_name>
+        <sys_update_version display_value="question_choice_23e5d49a83e66e10410a73d6feaad3f2">140614da83e66e10410a73d6feaad363</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 05:21:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_946454_food_de_0.GetMenuDetails</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetMenuDetails</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetMenuDetails = Class.create();
+GetMenuDetails.prototype = {
+    initialize: function() {
+    },
+
+    /**
+     * Fetch menu details from the menu_items table
+     * @param {String} restaurantName (optional)
+     * @returns {Array} menuDetails
+     */
+    getMenuItems: function(restaurantName) {
+        var menuDetails = [];
+        var gr = new GlideRecord('x_946454_food_de_0_menu_items'); // Change this to your actual table name
+            gr.addQuery('restaurant_name', restaurantName); // Adjust field name if needed
+        gr.query();
+        while (gr.next()) {
+            menuDetails.push({
+                name: gr.getValue('name'),
+                description: gr.getValue('description'),
+                price: gr.getValue('price'),
+                ingredients: gr.getValue('ingredients'),
+                restaurant: gr.getValue('restaurant_name')
+            });
+        }
+        return menuDetails;
+    },
+
+    type: 'GetMenuDetails'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 09:50:48</sys_created_on>
+        <sys_id>5aaa515a836e6e10410a73d6feaad3c5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>GetMenuDetails</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_script_include_5aaa515a836e6e10410a73d6feaad3c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 10:47:36</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>sys_script_include_5aaa515a836e6e10410a73d6feaad3c5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_946454_food_de_0.GetMenuDetails&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GetMenuDetails&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GetMenuDetails = Class.create();
+GetMenuDetails.prototype = {
+    initialize: function() {
+    },
+
+    /**
+     * Fetch menu details from the menu_items table
+     * @param {String} restaurantName (optional)
+     * @returns {Array} menuDetails
+     */
+    getMenuItems: function(restaurantName) {
+        var menuDetails = [];
+        var gr = new GlideRecord('x_946454_food_de_0_menu_items'); // Change this to your actual table name
+            gr.addQuery('restaurant_name', restaurantName); // Adjust field name if needed
+        gr.query();
+        while (gr.next()) {
+            menuDetails.push({
+                name: gr.getValue('name'),
+                description: gr.getValue('description'),
+                price: gr.getValue('price'),
+                ingredients: gr.getValue('ingredients'),
+                restaurant: gr.getValue('restaurant_name')
+            });
+        }
+        return menuDetails;
+    },
+
+    type: 'GetMenuDetails'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-07 09:50:48&lt;/sys_created_on&gt;&lt;sys_id&gt;5aaa515a836e6e10410a73d6feaad3c5&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetMenuDetails&lt;/sys_name&gt;&lt;sys_package display_value="Food Delivery System" source="x_946454_food_de_0"&gt;d660a9d183ea2a10410a73d6feaad3a7&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Food Delivery System"&gt;d660a9d183ea2a10410a73d6feaad3a7&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_5aaa515a836e6e10410a73d6feaad3c5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-07 10:47:36&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1064076708</payload_hash>
+        <record_name>GetMenuDetails</record_name>
+        <reverted_from/>
+        <source>2baace9583ae2a10410a73d6feaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 10:47:36</sys_created_on>
+        <sys_id>4bf7a99a83ae6e10410a73d6feaad341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e47f95b50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 10:47:36</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>cff7a99a2eae6e10d7a9bb5b17885940</update_guid>
+        <update_guid_history>cff7a99a2eae6e10d7a9bb5b17885940:1064076708,8a07a99ab6ae6e10dd37a74ab787f83c:-1606440109,3b666d5aabae6e101b0abd7d382cc2d7:-1690419951,ec75e996e3ae6e10372948627a626e9f:-1606440109,ab246d9658ae6e108c3a3cb9b6afac28:-1602477119,a131a9de8e6e6e105de744d3a582769e:767371260,82cc515ed36e6e109d371a8897f03eda:-1606440109,07fa1d5a566e6e105d4f92d377e2d7da:1254953077</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 12:43:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>01fe7f0c9f7f4110822384eb6afb1964</sys_id>
+        <sys_metadata>5aaa515a836e6e10410a73d6feaad3c5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetMenuDetails</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>sys_script_include_5aaa515a836e6e10410a73d6feaad3c5</sys_update_name>
+        <sys_update_version display_value="sys_script_include_5aaa515a836e6e10410a73d6feaad3c5">4bf7a99a83ae6e10410a73d6feaad341</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 12:43:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

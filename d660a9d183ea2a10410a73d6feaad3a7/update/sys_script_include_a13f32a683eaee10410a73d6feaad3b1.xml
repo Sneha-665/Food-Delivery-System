@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_946454_food_de_0.menuFilter</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>menuFilter</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var menuFilter = Class.create();
+menuFilter.prototype = {
+    initialize: function() {},
+
+    menuValidator: function(restaurant) {
+        var filter = [];
+        var ids;
+        var gr = new GlideRecord('x_946454_food_de_0_menu_items');
+        gr.addQuery('restaurant_name=' + restaurant);
+        while (gr.next()) {
+            filter.push(gr.sys_id);
+        }
+        ids = 'sys_idIN' + filter;
+        return ids;
+    },
+
+    type: 'menuFilter'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 11:53:10</sys_created_on>
+        <sys_id>a13f32a683eaee10410a73d6feaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>menuFilter</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_script_include_a13f32a683eaee10410a73d6feaad3b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 11:53:10</sys_updated_on>
+    </sys_script_include>
+</record_update>

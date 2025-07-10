@@ -3,8 +3,8 @@
         <element label="Description" max_length="2000" name="description" type="string"/>
         <element label="Rating" max_length="38" name="rating" type="decimal"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Reviewer Name" max_length="32" name="reviewer_name" reference="sys_user" type="reference"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
-        <element label="Order" max_length="32" name="order" reference="x_946454_food_de_0_order" type="reference"/>
         <element label="Address" max_length="2000" name="address" type="string"/>
         <element label="Name" max_length="255" name="name" type="string"/>
         <element label="Total Number of Orders" max_length="40" name="total_number_of_orders" type="integer"/>
@@ -14,7 +14,7 @@
             <element name="menu_item"/>
         </index>
         <index name="index2">
-            <element name="order"/>
+            <element name="reviewer_name"/>
         </index>
         <index name="index3">
             <element name="sys_class_name"/>

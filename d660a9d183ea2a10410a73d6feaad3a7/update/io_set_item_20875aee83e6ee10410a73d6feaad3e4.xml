@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>200</order>
+        <sc_cat_item display_value="Copy of Food Delivery System">77775eea83e6ee10410a73d6feaad3ad</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 08:53:43</sys_created_on>
+        <sys_id>20875aee83e6ee10410a73d6feaad3e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Menu Items.Copy of Food Delivery System</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>io_set_item_20875aee83e6ee10410a73d6feaad3e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 08:53:43</sys_updated_on>
+        <variable_set display_value="Menu Items">b3ed4a1183ee2a10410a73d6feaad3b1</variable_set>
+    </io_set_item>
+</record_update>

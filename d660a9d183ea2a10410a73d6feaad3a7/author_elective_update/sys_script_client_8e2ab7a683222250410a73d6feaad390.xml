@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>postal_code</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Auto Populate using pincode</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+    var ga = new GlideAjax('PinCodeHelper');
+	
+  ga.addParam('sysparm_name', 'getLocationByPin');
+  ga.addParam('sysparm_postal_code', newValue);
+  ga.getXMLAnswer(function(response) {
+    var data = JSON.parse(response);
+	alert(data);
+    if (data && !data.error) {
+      g_form.setValue('city', data.city);
+      
+      g_form.setValue('state', data.state);
+    }
+   
+	else {
+      g_form.showFieldMsg('postal_code', 'Invalid or unrecognized PIN Code', 'error');
+    }
+  });
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 16:08:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e2ab7a683222250410a73d6feaad390</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Auto Populate using pincode</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_script_client_8e2ab7a683222250410a73d6feaad390</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 16:41:42</sys_updated_on>
+        <table>x_946454_food_de_0_order</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>sys_script_client_8e2ab7a683222250410a73d6feaad390</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;postal_code&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Auto Populate using pincode&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+    var ga = new GlideAjax('PinCodeHelper');
+	
+  ga.addParam('sysparm_name', 'getLocationByPin');
+  ga.addParam('sysparm_postal_code', newValue);
+  ga.getXMLAnswer(function(response) {
+    var data = JSON.parse(response);
+	alert(data);
+    if (data &amp;&amp; !data.error) {
+      g_form.setValue('city', data.city);
+      
+      g_form.setValue('state', data.state);
+    }
+   
+	else {
+      g_form.showFieldMsg('postal_code', 'Invalid or unrecognized PIN Code', 'error');
+    }
+  });
+   //Type appropriate comment here, and begin script below
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 16:08:50&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8e2ab7a683222250410a73d6feaad390&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Auto Populate using pincode&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Food Delivery System" source="x_946454_food_de_0"&gt;d660a9d183ea2a10410a73d6feaad3a7&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Food Delivery System"&gt;d660a9d183ea2a10410a73d6feaad3a7&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_8e2ab7a683222250410a73d6feaad390&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-08 16:41:42&lt;/sys_updated_on&gt;&lt;table&gt;x_946454_food_de_0_order&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>933898623</payload_hash>
+        <record_name>Auto Populate using pincode</record_name>
+        <reverted_from/>
+        <source>2baace9583ae2a10410a73d6feaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 16:41:42</sys_created_on>
+        <sys_id>f392487283622250410a73d6feaad30c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197eaea24520000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 16:41:42</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>7b92487291622250c53c2ae01d59500b</update_guid>
+        <update_guid_history>7b92487291622250c53c2ae01d59500b:933898623,ce8248721d6222500a1fc6d4bceb92b9:1575761304,455208726062225093d409faf13df43d:834359488,de1bfbe65d222250e1afb824f59c6011:2054506262</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 05:22:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>2b31a806758e42bf93b2964a41578ab1</sys_id>
+        <sys_metadata>8e2ab7a683222250410a73d6feaad390</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auto Populate using pincode</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent display_value="">4cf2a1d583ea2a10410a73d6feaad336</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>sys_script_client_8e2ab7a683222250410a73d6feaad390</sys_update_name>
+        <sys_update_version display_value="sys_script_client_8e2ab7a683222250410a73d6feaad390">f392487283622250410a73d6feaad30c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 05:22:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

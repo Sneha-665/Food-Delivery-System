@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_946454_food_de_0.PinCodeHelper</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>PinCodeHelper</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var PinCodeHelper = Class.create();
+PinCodeHelper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getLocationByPin: function() {
+        var pincode = this.getParameter('sysparm_postal_code');
+        var response = new sn_ws.RESTMessageV2(); // REST call to postal API
+        response.setHttpMethod('GET');
+        response.setEndpoint('https://api.postalpincode.in/pincode/' + pincode);
+
+        var resp = response.execute();
+        var body = resp.getBody();
+
+        var json = JSON.parse(body);
+        var result = {};
+        if (json[0].Status === 'Success') {
+            var postOffice = json[0].PostOffice[0];
+            result.city = postOffice.Division;
+
+
+            result.state = postOffice.State;
+        } else {
+            result.error = true;
+        }
+        return JSON.stringify(result);
+    },
+    setRestaurant: function() {
+        var restaurantSysId = this.getParameter('sysparm_restaurant_sys_id');
+        if (restaurantSysId) {
+            gs.info('Restaurant Sys_id : ' + restaurantSysId);
+            gs.getSession().putClientData('selected_restaurant', restaurantSysId + '');
+        }
+        return 'Success!!!!';
+    },
+    getMenuDetails: function() {
+		var result = {};
+        var menuSysId = this.getParameter('sysparm_menu_name_sys_id');
+        var menu = new GlideRecord('x_946454_food_de_0_menu_items');
+        //menu.addQuery('sys_id',menuSysId+'');
+        menu.addQuery('sys_id', menuSysId);
+        menu.query();
+        gs.info(menu.query);
+        gs.info('Menu :' + menuSysId + '');
+        if (menu.next()) {
+            result.ingredients = menu.ingredients + '';
+            result.price = menu.price + '';
+        }
+        gs.info("Result : "+result);
+        return JSON.stringify(result);
+    },
+
+
+    type: 'PinCodeHelper'
+
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 16:04:33</sys_created_on>
+        <sys_id>a3473ba283222250410a73d6feaad370</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>PinCodeHelper</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_script_include_a3473ba283222250410a73d6feaad370</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 08:42:00</sys_updated_on>
+    </sys_script_include>
+</record_update>
