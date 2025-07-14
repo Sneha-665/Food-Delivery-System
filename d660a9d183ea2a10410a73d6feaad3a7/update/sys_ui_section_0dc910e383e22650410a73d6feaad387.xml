@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Delivery Instructions" section_id="0dc910e383e22650410a73d6feaad387" sys_domain="global" table="x_946454_food_de_0_order_details" version="3" view="workspace-food-delivery-system-1">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recipient_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>0dc950e383e22650410a73d6feaad30c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>05c950e383e22650410a73d6feaad306</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>0dc950e383e22650410a73d6feaad309</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stat0</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>0dc950e383e22650410a73d6feaad306</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>country</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>05c950e383e22650410a73d6feaad30a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>postal_code</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>05c950e383e22650410a73d6feaad307</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>0dc950e383e22650410a73d6feaad30a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>delivery_instructions</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>0dc950e383e22650410a73d6feaad307</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>05c950e383e22650410a73d6feaad30b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_number</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>05c950e383e22650410a73d6feaad308</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>0dc950e383e22650410a73d6feaad30b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>review_action</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>0dc950e383e22650410a73d6feaad308</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>review_comment</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>05c950e383e22650410a73d6feaad30c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>com_glideapp_questionset_default_question_editor.xml</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_id>05c950e383e22650410a73d6feaad309</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Menu Ordered formatter">2f0df45b8322e250410a73d6feaad3e5</sys_ui_formatter>
+            <sys_ui_section caption="Delivery Instructions" display_value="Delivery Instructions" name="x_946454_food_de_0_order_details" sys_domain="global" view="c2b95ca36de226502a990e82ac452026">0dc910e383e22650410a73d6feaad387</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Delivery Instructions</caption>
+            <header>false</header>
+            <name>x_946454_food_de_0_order_details</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 02:18:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0dc910e383e22650410a73d6feaad387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_946454_food_de_0_order_details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+            <sys_update_name>sys_ui_section_0dc910e383e22650410a73d6feaad387</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 02:18:15</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace Food Delivery System 1" name="workspace-food-delivery-system-1">c2b95ca36de226502a990e82ac452026</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Food Delivery System">88860ed183ae2a10410a73d6feaad397</cat_item>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Total Price</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onLoad() {
+  try {
+    // Get the value of the MRVS
+    var rows = JSON.parse(g_form.getValue('menu_items'));
+    var total = 0;
+    
+    // Loop through rows
+    for (var i = 0; i < rows.length; i++) {
+      var priceText = rows[i].food_price;
+	  alert("Inside loop"); // 'price' is the variable inside MRVS
+      if (priceText) {
+        var price = parseFloat(priceText.trim());
+        if (!isNaN(price)) {
+          total += price;
+        }
+      }
+    }
+
+    // Set total in normal variable
+    g_form.setValue('total_price', total.toFixed(2));
+  } catch (err) {
+     console.log("Error calculating MRVS total: " + err.message);
+  }
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 18:46:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de21329b83aae250410a73d6feaad3b7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Total Price</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>catalog_script_client_de21329b83aae250410a73d6feaad3b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 18:58:07</sys_updated_on>
+        <table/>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>catalog_script_client_de21329b83aae250410a73d6feaad3b7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Food Delivery System"&gt;88860ed183ae2a10410a73d6feaad397&lt;/cat_item&gt;&lt;cat_variable/&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Total Price&lt;/name&gt;&lt;order/&gt;&lt;published_ref/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+  try {
+    // Get the value of the MRVS
+    var rows = JSON.parse(g_form.getValue('menu_items'));
+    var total = 0;
+    
+    // Loop through rows
+    for (var i = 0; i &lt; rows.length; i++) {
+      var priceText = rows[i].food_price;
+	  alert("Inside loop"); // 'price' is the variable inside MRVS
+      if (priceText) {
+        var price = parseFloat(priceText.trim());
+        if (!isNaN(price)) {
+          total += price;
+        }
+      }
+    }
+
+    // Set total in normal variable
+    g_form.setValue('total_price', total.toFixed(2));
+  } catch (err) {
+     console.log("Error calculating MRVS total: " + err.message);
+  }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-10 18:46:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;de21329b83aae250410a73d6feaad3b7&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Total Price&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Food Delivery System" source="x_946454_food_de_0"&gt;d660a9d183ea2a10410a73d6feaad3a7&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Food Delivery System"&gt;d660a9d183ea2a10410a73d6feaad3a7&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_de21329b83aae250410a73d6feaad3b7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-10 18:58:07&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;va_supported&gt;true&lt;/va_supported&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>377450902</payload_hash>
+        <record_name>Total Price</record_name>
+        <reverted_from/>
+        <source>2baace9583ae2a10410a73d6feaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 18:58:07</sys_created_on>
+        <sys_id>6905f6df83aae250410a73d6feaad3fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197f5b3bfbd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 18:58:07</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>ed05f6df1eaae25002501aa39bcd5cfa</update_guid>
+        <update_guid_history>ed05f6df1eaae25002501aa39bcd5cfa:377450902,b493321f34aae2506861e8e2cc9b5495:-913165878,9343fe1f7daae25040ee22bd41f52f7e:-1074168794,eb423adbd6aae250fc47b100b19f4937:-1266239705</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Total Price">2205c3d3832ee250410a73d6feaad31d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 20:08:05</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>029dab33eea244f08579d30819f4d381</sys_id>
+        <sys_metadata>de21329b83aae250410a73d6feaad3b7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Total Price</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>catalog_script_client_de21329b83aae250410a73d6feaad3b7</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_de21329b83aae250410a73d6feaad3b7">6905f6df83aae250410a73d6feaad3fb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 20:08:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

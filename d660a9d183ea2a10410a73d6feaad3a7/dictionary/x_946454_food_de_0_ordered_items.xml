@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ffbbf52b83ea2650410a73d6feaad37e" extends="task" label="Ordered Items" max_length="40" name="x_946454_food_de_0_ordered_items" type="collection">
+        <element label="Food Price" max_length="40" name="food_price" type="string"/>
+        <element label="Quantity" max_length="40" name="quantity" type="string"/>
+        <element label="Order Details" max_length="32" name="order_details" reference="x_946454_food_de_0_order_details" type="reference"/>
+        <element label="Price" max_length="40" name="price" type="string"/>
+        <element label="Ingredients" max_length="40" name="ingredients" type="string"/>
+        <element label="Menu Name" max_length="32" name="menu_name" reference="x_946454_food_de_0_menu_items" type="reference"/>
+    </element>
+</database>

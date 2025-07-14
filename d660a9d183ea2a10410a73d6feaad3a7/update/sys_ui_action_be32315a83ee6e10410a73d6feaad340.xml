@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.state=='in_review'</condition>
+        <condition>current.status=='in_review' || current.status== 'new'</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -27,11 +27,12 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Cancle</name>
+        <name>Cancel</name>
         <onclick>cancelOrder()</onclick>
         <order>100</order>
         <script><![CDATA[function cancelOrder() {
-    history.back(); // or use window.location to redirect
+    g_form.setValue('status', 'cancel'); 
+	g_form.submit();// or use window.location to redirect
 }
 ]]></script>
         <show_insert>true</show_insert>
@@ -44,16 +45,16 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>be32315a83ee6e10410a73d6feaad340</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Cancle</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Cancel</sys_name>
         <sys_overrides/>
         <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
         <sys_policy/>
         <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
         <sys_update_name>sys_ui_action_be32315a83ee6e10410a73d6feaad340</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-09 15:57:44</sys_updated_on>
-        <table>x_946454_food_de_0_order</table>
+        <sys_updated_on>2025-07-11 10:46:51</sys_updated_on>
+        <table>x_946454_food_de_0_order_details</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>

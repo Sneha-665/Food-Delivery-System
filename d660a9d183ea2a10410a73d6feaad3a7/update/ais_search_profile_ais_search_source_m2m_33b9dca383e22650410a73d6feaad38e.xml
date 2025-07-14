@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="food-delivery-system Search Profile">06b95ca3f6e22650e3379786b411182e</profile>
+        <search_source display_value="Menu Items">33b9dca383e22650410a73d6feaad38b</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 02:18:11</sys_created_on>
+        <sys_id>33b9dca383e22650410a73d6feaad38e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>food-delivery-system Search Profile.Menu Items</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_33b9dca383e22650410a73d6feaad38e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 02:18:11</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

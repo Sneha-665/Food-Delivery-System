@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>Ribbon Config ID</description>
+        <name>ribbonConfigId</name>
+        <page display_value="">94b59d1fb3a2e2508d08fd948ec86781</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 12:01:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>18b59d1ffda2e2506da8b5be9cc94272</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ribbonConfigId</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_ux_page_property_18b59d1ffda2e2506da8b5be9cc94272</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 12:01:38</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_946454_food_de_0.94b59d1fb3a2e2508d08fd948ec86781.root.ribbonConfigId</unique_name>
+        <value>9cb59d1f6fa2e2508580f9ec9a6ce672</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>sys_ux_page_property_18b59d1ffda2e2506da8b5be9cc94272</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>Ribbon Config ID</description><name>ribbonConfigId</name><page display_value="">94b59d1fb3a2e2508d08fd948ec86781</page><required_translations/><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-10 12:01:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>18b59d1ffda2e2506da8b5be9cc94272</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ribbonConfigId</sys_name><sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package><sys_policy/><sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope><sys_update_name>sys_ux_page_property_18b59d1ffda2e2506da8b5be9cc94272</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-10 12:01:38</sys_updated_on><type>string</type><unique_name>x_946454_food_de_0.94b59d1fb3a2e2508d08fd948ec86781.root.ribbonConfigId</unique_name><value>9cb59d1f6fa2e2508580f9ec9a6ce672</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>-295951316</payload_hash>
+        <record_name>ribbonConfigId</record_name>
+        <reverted_from/>
+        <source>a326b73383022210410a73d6feaad3a9</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2025-06-17 16:28:21</sys_created_on>
+        <sys_id>3c9665178326e250410a73d6feaad3cc</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1977eb85c880000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Page Property</type>
+        <update_guid>f89665174326e250ea5dc5935bb8abcc</update_guid>
+        <update_guid_history>f89665174326e250ea5dc5935bb8abcc:-295951316</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 13:15:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>2af4d944d94b4e5a89c978e0f0181564</sys_id>
+        <sys_metadata>18b59d1ffda2e2506da8b5be9cc94272</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ribbonConfigId</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_18b59d1ffda2e2506da8b5be9cc94272</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_18b59d1ffda2e2506da8b5be9cc94272">3c9665178326e250410a73d6feaad3cc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 13:15:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

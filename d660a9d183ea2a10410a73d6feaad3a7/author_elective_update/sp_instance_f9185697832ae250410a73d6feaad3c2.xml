@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">35185697832ae250410a73d6feaad3bb</sp_column>
+        <sp_widget display_value="KB Top Rated">3c817b52cb30020000f8d856634c9cfb</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 16:51:42</sys_created_on>
+        <sys_id>f9185697832ae250410a73d6feaad3c2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Top Rated Articles</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sp_instance_f9185697832ae250410a73d6feaad3c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 16:56:53</sys_updated_on>
+        <title>Top Rated Articles</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=f9185697832ae250410a73d6feaad3c2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>sp_instance_f9185697832ae250410a73d6feaad3c2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">35185697832ae250410a73d6feaad3bb</sp_column><sp_widget display_value="KB Top Rated">3c817b52cb30020000f8d856634c9cfb</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-10 16:51:42</sys_created_on><sys_id>f9185697832ae250410a73d6feaad3c2</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Top Rated Articles</sys_name><sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package><sys_policy/><sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope><sys_update_name>sp_instance_f9185697832ae250410a73d6feaad3c2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-10 16:56:53</sys_updated_on><title>Top Rated Articles</title><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=f9185697832ae250410a73d6feaad3c2"/></record_update>]]></payload>
+        <payload_hash>560333881</payload_hash>
+        <record_name>Top Rated Articles</record_name>
+        <reverted_from/>
+        <source>2baace9583ae2a10410a73d6feaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 16:56:53</sys_created_on>
+        <sys_id>7d49521b832ae250410a73d6feaad399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197f544c14b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 16:56:53</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>f149521bdc2ae2506174f78d8ccb0299</update_guid>
+        <update_guid_history>f149521bdc2ae2506174f78d8ccb0299:560333881,1bb896d74a2ae250ada7be5b2fb37470:-1362536232,a37812d7ba2ae2508fe34dfe362da23d:1009560951,31185697f92ae250b5a9ae08d78eddc4:-1362536232</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Top Rated Articles">4c591e97832ae250410a73d6feaad3f8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 16:57:02</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>2cf4fad0f05e4b4089a0039db024e900</sys_id>
+        <sys_metadata>f9185697832ae250410a73d6feaad3c2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Top Rated Articles</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>sp_instance_f9185697832ae250410a73d6feaad3c2</sys_update_name>
+        <sys_update_version display_value="sp_instance_f9185697832ae250410a73d6feaad3c2">7d49521b832ae250410a73d6feaad399</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 16:57:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>A default view for Food Delivery System generated</description>
+        <name>view</name>
+        <page display_value="Food Delivery System">c6b95ca38fe226508b81d3ebc2d8112e</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 02:18:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>c2b95ca31be226503e8d861cfca2dc20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>view</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_ux_page_property_c2b95ca31be226503e8d861cfca2dc20</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 02:18:05</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_946454_food_de_0.c6b95ca38fe226508b81d3ebc2d8112e.root.view</unique_name>
+        <value>workspace-food-delivery-system-1</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=c2b95ca31be226503e8d861cfca2dc20"/>
+</record_update>

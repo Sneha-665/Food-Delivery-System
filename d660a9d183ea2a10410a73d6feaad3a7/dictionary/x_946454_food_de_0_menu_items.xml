@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="8f92699583ea2a10410a73d6feaad3bb" label="Menu Items" max_length="40" name="x_946454_food_de_0_menu_items" type="collection">
+    <element db_object_id="8f92699583ea2a10410a73d6feaad3bb" label="Menu Items" max_length="40" name="x_946454_food_de_0_menu_items" text_index="true" type="collection">
         <element label="Total Price" max_length="40" name="total_price" type="integer"/>
         <element label="Restaurant Name" max_length="32" name="restaurant_name" reference="x_946454_food_de_0_restaurant_details" type="reference"/>
         <element label="Ingredients" max_length="2000" name="ingredients" type="string"/>
