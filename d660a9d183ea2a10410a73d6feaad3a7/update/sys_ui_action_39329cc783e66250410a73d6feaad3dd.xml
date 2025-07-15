@@ -4,18 +4,26 @@
         <active>true</active>
         <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
+ var comments = g_form.getValue('comments');
+    
+    if (!comments.trim()) {
+        g_form.showFieldMsg('comments', 'Comments are mandatory when sending back.', 'error');
+        return false;
+    }
 
+    g_form.setValue('state', 'cancelled');
+    g_form.submit();
 }]]></client_script_v2>
         <comments/>
         <condition/>
         <form_action>true</form_action>
         <form_button>true</form_button>
-        <form_button_v2>false</form_button_v2>
+        <form_button_v2>true</form_button_v2>
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
-        <form_style>destructive</form_style>
-        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
         <hint/>
         <isolate_script>true</isolate_script>
         <list_action>false</list_action>
@@ -51,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>39329cc783e66250410a73d6feaad3dd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Send Back</sys_name>
         <sys_overrides/>
         <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
@@ -59,7 +67,7 @@
         <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
         <sys_update_name>sys_ui_action_39329cc783e66250410a73d6feaad3dd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-09 12:30:24</sys_updated_on>
+        <sys_updated_on>2025-07-14 10:49:25</sys_updated_on>
         <table>sysapproval_approver</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

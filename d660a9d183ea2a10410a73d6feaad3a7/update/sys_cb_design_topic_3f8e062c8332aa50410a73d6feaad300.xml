@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Food Delivery System 1">7f8ec22c8332aa50410a73d6feaad3fc</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"d323df1caed242d2a22d3f90297d6c80","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"d323df1caed242d2a22d3f90297d6c80"}],"goals":[{"name":"primary","trigger_id":"d323df1caed242d2a22d3f90297d6c80","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"64d39bcd094c4e12955e7f5d7aea7faf","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"6100808852ea41e7af18a91a79b24822","name":"End","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"Hi {0}, Welcome to Food Delivery System Application.\", vaContext.getRequesterLang(), [vaInputs.user.name.getDisplayValue()])"}],"request_feedback":true,"isCollapsible":true,"id":"a513f3b0b8c843f1929df9b53335c15c","name":"Welcome message","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"6434c5b63c1d44d0960e7bce282f8cda","name":"User Choice","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"405540417fa04455988a2a0f35b45b78","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"How can I help you?\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"InputPrompt","variable_id":"a5dec17333e34cdd9d2294e6f3b9a83b","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please enter your Order ID\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"metadataScript":"","cardName":"","cardFields":[],"id":"eea987f05f0045be90d16abd5136a7ae","name":"Order ID","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Check Order Status","expression":{"type":"Applicability","mode":"query","value":"user_choice=Check Request Status"},"id":"8546de47be4a4357a565e90b27007d1e","name":"Check Order Status","expert_mode":false},{"type":"Branch","label":"Cancel Order Status","expression":{"type":"Applicability","mode":"query","value":"user_choice=Cancel Order"},"id":"cae71f5713ac4148ba893ecf74519e97","name":"Cancel Order Status","expert_mode":false}],"id":"265c55f404504a2697388f375f6a38c1","goal_id":"primary","expert_mode":false},{"type":"CRUDAction","mode":"read","read_mode":"variable","query":"number={{vaInputs.order_id}}","variable_id":"168ea19ae38943bfbd0cf0d1134c3241","id":"4559145417e046e5862d101182d8a43e","name":"To Check Order Status","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"condition":{"type":"Condition","mode":"glide_query","value":"number={{vaInputs.order_id}}"}},{"type":"RecordOutputPrompt","mode":"variable","table":"x_946454_food_de_0_order_details","variable_id":"168ea19ae38943bfbd0cf0d1134c3241","fields":["recipient_name","status"],"request_feedback":true,"id":"ee0f7931f2824f6d85bbb885a1671ab2","name":"Show Status","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"condition":{"type":"Condition","mode":"glide_query","value":""}},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"If Yes","expression":{"type":"Applicability","mode":"query","value":"order_id={{vaInputs.to_check_order_status.number}}"},"id":"c2ec8c3fd408425795b781631883a088","name":"If Yes","expert_mode":false},{"type":"Branch","label":"If No","expression":{"type":"Applicability","mode":"query","value":""},"id":"68ae0720ee8b447e876db2e98dcc421d","name":"If No","expert_mode":false}],"id":"ad1c738050d14bd598f69dc6a92be33d","goal_id":"primary","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"The order ID is not valid.Please give the valid order ID.\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"212373744d844cb38ca21ef716b7f6d1","name":"If Not Exists","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"CRUDAction","mode":"read","read_mode":"variable","query":"number={{vaInputs.order_id}}^status=in_review","variable_id":"51523ed3fcfd4b74af6e71a871597f67","id":"6c1ba282bcb542ff95886fcf3e5ea440","name":"To Cancel the Order","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"condition":{"type":"Condition","mode":"glide_query","value":"number={{vaInputs.order_id}}^status=in_review"}},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"If Yes","expression":{"type":"Applicability","mode":"query","value":"to_cancel_the_orderISNOTEMPTY"},"id":"9fd5c1485d54417e9736dd8f9481c48c","name":"If Yes","expert_mode":false},{"type":"Branch","label":"If No","expression":{"type":"Applicability","mode":"query","value":""},"id":"427d0e4302564474adb7744cee9e5da5","name":"If No","expert_mode":false}],"id":"5fd1002a81934ba6a9c965e6370a38e0","goal_id":"primary","expert_mode":false},{"type":"CRUDAction","mode":"update","query":"status=cancel","variable_id":"51523ed3fcfd4b74af6e71a871597f67","id":"2a8bacb2ef37464ba396815d92d7bcd0","name":"Update Record","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"string","value":""}]},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"Your order has been cancelled successfully.\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"cdcf9b28c6274a00a935f2a8c2fd1387","name":"Cancelled","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:2a8cca648332aa50410a73d6feaad3d1:node:37084f92b8af492b9e06d0643a9ed400:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"37084f92b8af492b9e06d0643a9ed400","name":"If Not","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false}],"edges":[{"type":"Edge","source_node_id":"ee0f7931f2824f6d85bbb885a1671ab2","target_node_id":"6100808852ea41e7af18a91a79b24822","id":"5f045820d31a4f71add2471acfc7183f"},{"type":"Edge","source_node_id":"64d39bcd094c4e12955e7f5d7aea7faf","target_node_id":"a513f3b0b8c843f1929df9b53335c15c","id":"33b94bc08cde43568913390187657a06"},{"type":"Edge","source_node_id":"a513f3b0b8c843f1929df9b53335c15c","target_node_id":"6434c5b63c1d44d0960e7bce282f8cda","id":"db52e37b43744cb4a10d8eeaff63ddd9"},{"type":"Edge","source_node_id":"6434c5b63c1d44d0960e7bce282f8cda","target_node_id":"eea987f05f0045be90d16abd5136a7ae","id":"e6391fa132f348d2932665611d4c3f5a"},{"type":"Edge","source_node_id":"eea987f05f0045be90d16abd5136a7ae","target_node_id":"265c55f404504a2697388f375f6a38c1","id":"8bf2b3003d2d4a928ae15ce39c1e01f9"},{"type":"Edge","source_node_id":"265c55f404504a2697388f375f6a38c1","target_node_id":"4559145417e046e5862d101182d8a43e","branch_id":"8546de47be4a4357a565e90b27007d1e","id":"3a39910d94a44a02924980edd8a26945","name":"8546de47be4a4357a565e90b27007d1e"},{"type":"Edge","source_node_id":"4559145417e046e5862d101182d8a43e","target_node_id":"ad1c738050d14bd598f69dc6a92be33d","id":"ad4f1f577e374fadbbd6c0fba396a6cd"},{"type":"Edge","source_node_id":"ad1c738050d14bd598f69dc6a92be33d","target_node_id":"ee0f7931f2824f6d85bbb885a1671ab2","branch_id":"c2ec8c3fd408425795b781631883a088","id":"aad5b0c9b9444e83ba12478e5843a177","name":"c2ec8c3fd408425795b781631883a088"},{"type":"Edge","source_node_id":"ad1c738050d14bd598f69dc6a92be33d","target_node_id":"212373744d844cb38ca21ef716b7f6d1","branch_id":"68ae0720ee8b447e876db2e98dcc421d","id":"2a96aa5d507d49b8af875d07b36dcdf4","name":"68ae0720ee8b447e876db2e98dcc421d"},{"type":"Edge","source_node_id":"212373744d844cb38ca21ef716b7f6d1","target_node_id":"6100808852ea41e7af18a91a79b24822","id":"28efce8fb01f44869251d3f8f6cd64ed"},{"type":"Edge","source_node_id":"265c55f404504a2697388f375f6a38c1","target_node_id":"6c1ba282bcb542ff95886fcf3e5ea440","branch_id":"cae71f5713ac4148ba893ecf74519e97","id":"77f9d064903f4bdaa5ad74bdea2b54c1","name":"cae71f5713ac4148ba893ecf74519e97"},{"type":"Edge","source_node_id":"6c1ba282bcb542ff95886fcf3e5ea440","target_node_id":"5fd1002a81934ba6a9c965e6370a38e0","id":"24c53f82bed94a83abd60d3d0b313295"},{"type":"Edge","source_node_id":"5fd1002a81934ba6a9c965e6370a38e0","target_node_id":"2a8bacb2ef37464ba396815d92d7bcd0","branch_id":"9fd5c1485d54417e9736dd8f9481c48c","id":"ff9fbea3649b46c2b8d446f71abfb772","name":"9fd5c1485d54417e9736dd8f9481c48c"},{"type":"Edge","source_node_id":"2a8bacb2ef37464ba396815d92d7bcd0","target_node_id":"cdcf9b28c6274a00a935f2a8c2fd1387","id":"0cb2347ca3114a2dbb987ca8b49d4f4f"},{"type":"Edge","source_node_id":"cdcf9b28c6274a00a935f2a8c2fd1387","target_node_id":"6100808852ea41e7af18a91a79b24822","id":"3a03de44936740a5b9d62979dd5ebc4c"},{"type":"Edge","source_node_id":"5fd1002a81934ba6a9c965e6370a38e0","target_node_id":"37084f92b8af492b9e06d0643a9ed400","branch_id":"427d0e4302564474adb7744cee9e5da5","id":"42dcf425616944e6a1bfd7624ad62771","name":"427d0e4302564474adb7744cee9e5da5"},{"type":"Edge","source_node_id":"37084f92b8af492b9e06d0643a9ed400","target_node_id":"6100808852ea41e7af18a91a79b24822","id":"670fbf3e472d4df3b33994b2494ef99b"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"Check Order Status","element":"Check Request Status"},{"name":"Cancel Order","element":"Cancel Order"}],"id":"405540417fa04455988a2a0f35b45b78","name":"user_choice","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"User Choice"},{"type":"String","name":"order_id","list":false,"id":"a5dec17333e34cdd9d2294e6f3b9a83b","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"Reference","table":"x_946454_food_de_0_order_details","auto_select":false,"id":"168ea19ae38943bfbd0cf0d1134c3241","name":"to_check_order_status","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Reference","table":"x_946454_food_de_0_order_details","auto_select":false,"id":"51523ed3fcfd4b74af6e71a871597f67","name":"to_cancel_the_order","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Reference","table":"","auto_select":false,"id":"18227dba5f5b421e8de35bdf65019ec1","name":"update_record","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"d660a9d183ea2a10410a73d6feaad3a7","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"2a8cca648332aa50410a73d6feaad3d1","name":"Food Delivery System 1","key_phrases":["Food Delivery System 1"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Food Delivery System 1","library":false,"csTopicId":"7f8ec22c8332aa50410a73d6feaad3fc","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>2a8cca648332aa50410a73d6feaad3d1</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.78",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "64d39bcd094c4e12955e7f5d7aea7faf": {
+          "id": "64d39bcd094c4e12955e7f5d7aea7faf",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "6100808852ea41e7af18a91a79b24822": {
+          "id": "6100808852ea41e7af18a91a79b24822",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "a513f3b0b8c843f1929df9b53335c15c": {
+          "id": "a513f3b0b8c843f1929df9b53335c15c",
+          "stepType": "TextOutput",
+          "name": "Welcome message",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Hi "
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.user.name}}",
+                        "displayValue": "Input Variables➛User➛Name"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ", Welcome to Food Delivery System Application."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "1eafe9a7672b4355be797b33384b3596"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "6434c5b63c1d44d0960e7bce282f8cda": {
+          "name": "User Choice",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How can I help you?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "405540417fa04455988a2a0f35b45b78",
+          "detailDescription": "",
+          "id": "6434c5b63c1d44d0960e7bce282f8cda",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "eea987f05f0045be90d16abd5136a7ae": {
+          "id": "eea987f05f0045be90d16abd5136a7ae",
+          "stepType": "TextPrompt",
+          "name": "Order ID",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please enter your Order ID"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "a5dec17333e34cdd9d2294e6f3b9a83b",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "265c55f404504a2697388f375f6a38c1": {
+          "id": "265c55f404504a2697388f375f6a38c1",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "4559145417e046e5862d101182d8a43e": {
+          "id": "4559145417e046e5862d101182d8a43e",
+          "stepType": "LookupRecord",
+          "name": "To Check Order Status",
+          "condition": {
+            "mode": "glide_query",
+            "value": "number={{vaInputs.order_id}}"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "168ea19ae38943bfbd0cf0d1134c3241"
+        },
+        "ee0f7931f2824f6d85bbb885a1671ab2": {
+          "id": "ee0f7931f2824f6d85bbb885a1671ab2",
+          "stepType": "RecordOutput",
+          "name": "Show Status",
+          "variableId": "168ea19ae38943bfbd0cf0d1134c3241",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "x_946454_food_de_0_order_details",
+          "fields": [
+            "recipient_name",
+            "status"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        },
+        "ad1c738050d14bd598f69dc6a92be33d": {
+          "id": "ad1c738050d14bd598f69dc6a92be33d",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "212373744d844cb38ca21ef716b7f6d1": {
+          "id": "212373744d844cb38ca21ef716b7f6d1",
+          "stepType": "TextOutput",
+          "name": "If Not Exists",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "The order ID is not valid.Please give the valid order ID."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "caac6cb70618408fa3632b57a5f93d09"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "6c1ba282bcb542ff95886fcf3e5ea440": {
+          "id": "6c1ba282bcb542ff95886fcf3e5ea440",
+          "stepType": "LookupRecord",
+          "name": "To Cancel the Order",
+          "condition": {
+            "mode": "glide_query",
+            "value": "number={{vaInputs.order_id}}^status=in_review"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "51523ed3fcfd4b74af6e71a871597f67"
+        },
+        "5fd1002a81934ba6a9c965e6370a38e0": {
+          "id": "5fd1002a81934ba6a9c965e6370a38e0",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "2a8bacb2ef37464ba396815d92d7bcd0": {
+          "id": "2a8bacb2ef37464ba396815d92d7bcd0",
+          "stepType": "CrudAction",
+          "name": "Update Record",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "status",
+                  "expression": "cancel",
+                  "id": "603730692f394f798b3ff770c7eb34e2"
+                }
+              ]
+            },
+            "queryString": "status=cancel"
+          },
+          "mode": "update",
+          "record": "51523ed3fcfd4b74af6e71a871597f67",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "",
+              "mode": "simple"
+            }
+          ],
+          "variableId": "18227dba5f5b421e8de35bdf65019ec1"
+        },
+        "cdcf9b28c6274a00a935f2a8c2fd1387": {
+          "id": "cdcf9b28c6274a00a935f2a8c2fd1387",
+          "stepType": "TextOutput",
+          "name": "Cancelled",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Your order has been cancelled successfully."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "f90dde0ea0a24b32a3150328d8b1032e"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "37084f92b8af492b9e06d0643a9ed400": {
+          "id": "37084f92b8af492b9e06d0643a9ed400",
+          "stepType": "TextOutput",
+          "name": "If Not",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Your order is not in 'In Review' .So your order cannot be cancelled."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "e01427dd9f2341ee875cec08c33dce87"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "5f045820d31a4f71add2471acfc7183f",
+          "edgeType": "Edge",
+          "source": "ee0f7931f2824f6d85bbb885a1671ab2",
+          "target": "6100808852ea41e7af18a91a79b24822",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "33b94bc08cde43568913390187657a06",
+          "edgeType": "Edge",
+          "source": "64d39bcd094c4e12955e7f5d7aea7faf",
+          "target": "a513f3b0b8c843f1929df9b53335c15c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "db52e37b43744cb4a10d8eeaff63ddd9",
+          "edgeType": "Edge",
+          "source": "a513f3b0b8c843f1929df9b53335c15c",
+          "target": "6434c5b63c1d44d0960e7bce282f8cda",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e6391fa132f348d2932665611d4c3f5a",
+          "edgeType": "Edge",
+          "source": "6434c5b63c1d44d0960e7bce282f8cda",
+          "target": "eea987f05f0045be90d16abd5136a7ae",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8bf2b3003d2d4a928ae15ce39c1e01f9",
+          "edgeType": "Edge",
+          "source": "eea987f05f0045be90d16abd5136a7ae",
+          "target": "265c55f404504a2697388f375f6a38c1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3a39910d94a44a02924980edd8a26945",
+          "edgeType": "Branch",
+          "source": "265c55f404504a2697388f375f6a38c1",
+          "target": "4559145417e046e5862d101182d8a43e",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.user_choice=Check Request Status",
+            "mode": "query"
+          },
+          "label": "Check Order Status"
+        },
+        {
+          "id": "ad4f1f577e374fadbbd6c0fba396a6cd",
+          "edgeType": "Edge",
+          "source": "4559145417e046e5862d101182d8a43e",
+          "target": "ad1c738050d14bd598f69dc6a92be33d",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "aad5b0c9b9444e83ba12478e5843a177",
+          "edgeType": "Branch",
+          "source": "ad1c738050d14bd598f69dc6a92be33d",
+          "target": "ee0f7931f2824f6d85bbb885a1671ab2",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.order_id={{vaInputs.to_check_order_status.number}}",
+            "mode": "query"
+          },
+          "label": "If Yes"
+        },
+        {
+          "id": "2a96aa5d507d49b8af875d07b36dcdf4",
+          "edgeType": "Branch",
+          "source": "ad1c738050d14bd598f69dc6a92be33d",
+          "target": "212373744d844cb38ca21ef716b7f6d1",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "query",
+            "value": ""
+          },
+          "label": "If No"
+        },
+        {
+          "id": "28efce8fb01f44869251d3f8f6cd64ed",
+          "edgeType": "Edge",
+          "source": "212373744d844cb38ca21ef716b7f6d1",
+          "target": "6100808852ea41e7af18a91a79b24822",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "77f9d064903f4bdaa5ad74bdea2b54c1",
+          "edgeType": "Branch",
+          "source": "265c55f404504a2697388f375f6a38c1",
+          "target": "6c1ba282bcb542ff95886fcf3e5ea440",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.user_choice=Cancel Order",
+            "mode": "query"
+          },
+          "label": "Cancel Order Status"
+        },
+        {
+          "id": "24c53f82bed94a83abd60d3d0b313295",
+          "edgeType": "Edge",
+          "source": "6c1ba282bcb542ff95886fcf3e5ea440",
+          "target": "5fd1002a81934ba6a9c965e6370a38e0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ff9fbea3649b46c2b8d446f71abfb772",
+          "edgeType": "Branch",
+          "source": "5fd1002a81934ba6a9c965e6370a38e0",
+          "target": "2a8bacb2ef37464ba396815d92d7bcd0",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.to_cancel_the_orderISNOTEMPTY",
+            "mode": "query"
+          },
+          "label": "If Yes"
+        },
+        {
+          "id": "0cb2347ca3114a2dbb987ca8b49d4f4f",
+          "edgeType": "Edge",
+          "source": "2a8bacb2ef37464ba396815d92d7bcd0",
+          "target": "cdcf9b28c6274a00a935f2a8c2fd1387",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3a03de44936740a5b9d62979dd5ebc4c",
+          "edgeType": "Edge",
+          "source": "cdcf9b28c6274a00a935f2a8c2fd1387",
+          "target": "6100808852ea41e7af18a91a79b24822",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "42dcf425616944e6a1bfd7624ad62771",
+          "edgeType": "Branch",
+          "source": "5fd1002a81934ba6a9c965e6370a38e0",
+          "target": "37084f92b8af492b9e06d0643a9ed400",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "query",
+            "value": ""
+          },
+          "label": "If No"
+        },
+        {
+          "id": "670fbf3e472d4df3b33994b2494ef99b",
+          "edgeType": "Edge",
+          "source": "37084f92b8af492b9e06d0643a9ed400",
+          "target": "6100808852ea41e7af18a91a79b24822",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "405540417fa04455988a2a0f35b45b78": {
+      "id": "405540417fa04455988a2a0f35b45b78",
+      "name": "user_choice",
+      "label": "User Choice",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Check Order Status",
+          "value": "Check Request Status"
+        },
+        {
+          "label": "Cancel Order",
+          "value": "Cancel Order"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "6434c5b63c1d44d0960e7bce282f8cda",
+      "isHidden": false
+    },
+    "a5dec17333e34cdd9d2294e6f3b9a83b": {
+      "id": "a5dec17333e34cdd9d2294e6f3b9a83b",
+      "name": "order_id",
+      "label": "Order ID",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTc1MjQ5ODkzNTkxMCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "eea987f05f0045be90d16abd5136a7ae",
+      "isHidden": false
+    },
+    "168ea19ae38943bfbd0cf0d1134c3241": {
+      "id": "168ea19ae38943bfbd0cf0d1134c3241",
+      "name": "to_check_order_status",
+      "label": "To Check Order Status",
+      "varType": "reference",
+      "table": "x_946454_food_de_0_order_details",
+      "category": "vaInputs",
+      "nodeId": "ee0f7931f2824f6d85bbb885a1671ab2",
+      "isHidden": false
+    },
+    "51523ed3fcfd4b74af6e71a871597f67": {
+      "id": "51523ed3fcfd4b74af6e71a871597f67",
+      "name": "to_cancel_the_order",
+      "label": "To Cancel The Order",
+      "varType": "reference",
+      "table": "x_946454_food_de_0_order_details",
+      "category": "vaInputs",
+      "nodeId": "6c1ba282bcb542ff95886fcf3e5ea440",
+      "isHidden": false
+    },
+    "18227dba5f5b421e8de35bdf65019ec1": {
+      "id": "18227dba5f5b421e8de35bdf65019ec1",
+      "name": "update_record",
+      "label": "Update Record",
+      "varType": "reference",
+      "table": "",
+      "inactive": true,
+      "category": "vaInputs",
+      "nodeId": "2a8bacb2ef37464ba396815d92d7bcd0",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>Food Delivery System 1</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 13:22:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3f8e062c8332aa50410a73d6feaad300</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sys_cb_design_topic_3f8e062c8332aa50410a73d6feaad300</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 13:43:01</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

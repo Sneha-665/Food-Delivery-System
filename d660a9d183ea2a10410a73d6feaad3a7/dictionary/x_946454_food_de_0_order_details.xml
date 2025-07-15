@@ -32,6 +32,7 @@
         <element label="City" mandatory="true" max_length="40" name="city" type="string"/>
         <element label="Restaurant" max_length="32" name="restauran0" reference="x_946454_food_de_0_restaurant_details" type="reference"/>
         <element label="State" max_length="40" name="stat1" type="string"/>
+        <element label="Editable Flag" max_length="40" name="editable_flag" type="boolean"/>
         <element label="Contact Number" mandatory="true" max_length="40" name="contact_number" type="string"/>
     </element>
 </database>
