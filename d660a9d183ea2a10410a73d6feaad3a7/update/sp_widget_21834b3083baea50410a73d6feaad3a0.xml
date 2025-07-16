@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.fds-home-container {&#13;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;&#13;
+  padding: 20px;&#13;
+  color: black;&#13;
+}&#13;
+&#13;
+.fds-hero-banner {&#13;
+  &#13;
+  background-color: #f8f8f8;&#13;
+  text-align: center;&#13;
+  padding: 40px 20px;&#13;
+  border-radius: 12px;&#13;
+  margin-bottom: 30px;&#13;
+  color: black;&#13;
+}&#13;
+&#13;
+.fds-hero-banner h1 {&#13;
+  font-size: 28px;&#13;
+  color: black;&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+&#13;
+.fds-hero-banner p {&#13;
+  font-size: 16px;&#13;
+  color: black;&#13;
+}&#13;
+&#13;
+.fds-action-card {&#13;
+  background: #ffffff;&#13;
+  padding: 30px;&#13;
+  max-width: 500px;&#13;
+  margin: 0 auto 40px auto;&#13;
+  border-radius: 12px;&#13;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.fds-action-card .card-content i {&#13;
+  font-size: 40px;&#13;
+  color: black;&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+&#13;
+.fds-action-card .card-content h2 {&#13;
+  color: black;&#13;
+  margin: 10px 0;&#13;
+}&#13;
+&#13;
+.fds-action-card .card-content p {&#13;
+  color: black;&#13;
+  margin-bottom: 20px;&#13;
+}&#13;
+&#13;
+.fds-action-card button {&#13;
+  background-color: black;&#13;
+  color: #fff;&#13;
+  border: none;&#13;
+  padding: 12px 25px;&#13;
+  border-radius: 8px;&#13;
+  cursor: pointer;&#13;
+  font-size: 16px;&#13;
+  transition: background-color 0.3s ease;&#13;
+}&#13;
+&#13;
+.fds-action-card button:hover {&#13;
+  background-color: #333;&#13;
+}&#13;
+&#13;
+.fds-process-tracker {&#13;
+  display: flex;&#13;
+  justify-content: center;&#13;
+  align-items: center;&#13;
+  flex-wrap: wrap;&#13;
+  gap: 20px;&#13;
+}&#13;
+&#13;
+.fds-process-tracker .step {&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  align-items: center;&#13;
+}&#13;
+&#13;
+.fds-process-tracker .step i {&#13;
+  font-size: 28px;&#13;
+  color: black;&#13;
+  margin-bottom: 5px;&#13;
+}&#13;
+&#13;
+.fds-process-tracker .step p {&#13;
+  font-size: 14px;&#13;
+  color: black;&#13;
+}&#13;
+&#13;
+.fds-process-tracker .tracker-line {&#13;
+  width: 30px;&#13;
+  height: 2px;&#13;
+  background-color: black;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Card Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 11:57:07</sys_created_on>
+        <sys_id>21834b3083baea50410a73d6feaad3a0</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Card Widget</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sp_widget_21834b3083baea50410a73d6feaad3a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 17:12:53</sys_updated_on>
+        <template><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Welcome to Food Delivery System</title>
+  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="fds-home-container">
+
+  <!-- Header -->
+  <div class="fds-hero-banner">
+    <h1>Food Delivery System</h1>
+    <p>Order and track your food easily with real-time updates</p>
+  </div>
+
+  <!-- Submit Order Card -->
+  <div class="fds-action-card">
+    <div class="card-content">
+      <i class="fas fa-utensils"></i>
+      <h2>Order Food</h2>
+      <p>Order your cravings in seconds because good food shouldn't wait.</p>
+      <button onclick="window.location.href='https://dev190334.service-now.com/fds?id=sc_cat_item&sys_id=88860ed183ae2a10410a73d6feaad397'">
+        Order Now
+      </button>
+    </div>
+  </  <!-- Process Flow -->
+  <div class="fds-process-tracker">
+    <div class="step">
+      <i class="fas fa-user"></i>
+      <p>Customer</p>
+    </div>
+    <div class="tracker-line"></div>
+    <div class="step">
+      <i class="fas fa-user"></i>
+      <p>Reviewer</p>
+    </div>
+    <div class="tracker-line"></div>
+    <div class="step">
+      <i class="fas fa-check"></i>
+      <p>Order Confirmed</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
+]]></template>
+    </sp_widget>
+</record_update>

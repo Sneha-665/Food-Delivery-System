@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="66db03ba83626250410a73d6feaad3d2" extends="task" label="Order Details" max_length="40" name="x_946454_food_de_0_order_details" text_index="true" type="collection">
+    <element audit="true" db_object_id="66db03ba83626250410a73d6feaad3d2" extends="task" label="Order Details" max_length="40" name="x_946454_food_de_0_order_details" text_index="true" type="collection">
         <element label="Recipient Name" mandatory="true" max_length="40" name="recipient_name" type="string"/>
         <element label="Address" mandatory="true" max_length="255" name="address" type="string"/>
         <element label="Restaurant Name" max_length="40" name="restaurant" type="string"/>

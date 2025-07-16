@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Copy of Home Page (3) - Container 6</name>
+        <order>6</order>
+        <semantic_tag/>
+        <sp_page display_value="copy_of_index_3">2d185297832ae250410a73d6feaad39a</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 09:04:28</sys_created_on>
+        <sys_id>d61d527c83b6ea50410a73d6feaad3e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Copy of Home Page (3) - Container 6</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_update_name>sp_container_d61d527c83b6ea50410a73d6feaad3e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 09:05:03</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</application>
+        <file_path/>
+        <instance_id>053e84681b0af1d4fe1b43f4bd4bcb05</instance_id>
+        <instance_name>dev190334</instance_name>
+        <name>sp_container_d61d527c83b6ea50410a73d6feaad3e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Copy of Home Page (3) - Container 6</name><order>6</order><semantic_tag/><sp_page display_value="copy_of_index_3">2d185297832ae250410a73d6feaad39a</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-15 09:04:28</sys_created_on><sys_id>d61d527c83b6ea50410a73d6feaad3e1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Copy of Home Page (3) - Container 6</sys_name><sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package><sys_policy/><sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope><sys_update_name>sp_container_d61d527c83b6ea50410a73d6feaad3e1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-15 09:05:03</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-2143628687</payload_hash>
+        <record_name>Copy of Home Page (3) - Container 6</record_name>
+        <reverted_from/>
+        <source>2baace9583ae2a10410a73d6feaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 09:05:03</sys_created_on>
+        <sys_id>fe3d967c83b6ea50410a73d6feaad346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1980d5493550000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 09:05:03</sys_updated_on>
+        <type>Container</type>
+        <update_guid>f23d967c22b6ea5085d734146da65046</update_guid>
+        <update_guid_history>f23d967c22b6ea5085d734146da65046:-2143628687,de1d527cfbb6ea509661df30cb8b2ce3:-1707961870</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Copy of Home Page (3) - Container 6">cc4dd67c83b6ea50410a73d6feaad353</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 09:05:08</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>1b2cfeff41ad453189a6ababd0a23a21</sys_id>
+        <sys_metadata>d61d527c83b6ea50410a73d6feaad3e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Home Page (3) - Container 6</sys_name>
+        <sys_package display_value="Food Delivery System" source="x_946454_food_de_0">d660a9d183ea2a10410a73d6feaad3a7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Food Delivery System">d660a9d183ea2a10410a73d6feaad3a7</sys_scope>
+        <sys_scope_delete display_value="">acd6e600c5b84d68975b2aa1af31df90</sys_scope_delete>
+        <sys_update_name>sp_container_d61d527c83b6ea50410a73d6feaad3e1</sys_update_name>
+        <sys_update_version display_value="sp_container_d61d527c83b6ea50410a73d6feaad3e1">fe3d967c83b6ea50410a73d6feaad346</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 09:05:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

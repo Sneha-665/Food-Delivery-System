@@ -28,6 +28,20 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-07-09 07:37:17</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-15 10:43:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2ab33af8833aea50410a73d6feaad3b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_946454_food_de_0_order_details" name="x_946454_food_de_0_order_details" sys_domain="global" view="Default view">fe9f8ffe83626250410a73d6feaad31d</sys_ui_form>
+            <sys_ui_section caption="Activity Stream" display_value="Activity Stream" name="x_946454_food_de_0_order_details" sys_domain="global" view="Default view">22b33af8833aea50410a73d6feaad37b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-15 10:43:20</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_946454_food_de_0_order_details</name>
             <roles/>
